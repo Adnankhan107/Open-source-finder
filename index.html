@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenSource Finder</title>
+    <link rel="icon" href="assets/favicon/fevicon-github.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="hero-header">
+        <div class="header-content">
+            <h1>OpenSource Finder</h1>
+            <p>Discover GitHub projects to contribute to — made simple.</p>
+        </div>
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="search" name="query" placeholder="Search repositories..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Filters Section -->
+    <section class="filters">
+        <div class="filter-container">
+            <div class="filter">
+                <label for="language">Language</label>
+                <select id="language">
+                    <option value="">All</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="cpp">C++</option>
+                    <option value="go">Go</option>
+                </select>
+            </div>
+
+            <div class="filter">
+                <label for="stars">Stars</label>
+                <select id="stars">
+                    <option value="">Any</option>
+                    <option value=">100">> 100</option>
+                    <option value=">500">> 500</option>
+                    <option value=">1000">> 1000</option>
+                </select>
+            </div>
+
+            <div class="filter">
+                <label for="issues">Issues</label>
+                <select id="issues">
+                    <option value="">Any</option>
+                    <option value="<10">< 10</option>
+                    <option value="<50">< 50</option>
+                    <option value="<100">< 100</option>
+                </select>
+            </div>
+
+            <div class="filter">
+                <label for="updated">Updated</label>
+                <select id="updated">
+                    <option value="">Any Time</option>
+                    <option value="week">Last Week</option>
+                    <option value="month">Last Month</option>
+                    <option value="year">Last Year</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Repository Results Section -->
+    <section class="repo-results">
+        <div class="results-container">
+            <!-- Example Card -->
+            <div class="repo-card">
+                <div class="repo-header">
+                    <h3 class="repo-name">open-source-finder</h3>
+                    <a href="#" class="repo-link" target="_blank">View on GitHub</a>
+                </div>
+                <p class="repo-description">A web app that helps developers discover open-source projects to contribute to.</p>
+                <div class="repo-stats">
+                    <span>⭐ 1200</span>
+                    <span>🐞 45 Issues</span>
+                    <span>💻 JavaScript</span>
+                    <span>⏰ Updated 3 days ago</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with ❤️ for Open Source • OpenSource Finder © 2025</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
